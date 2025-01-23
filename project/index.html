@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RSD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+</head>
+<body style="background: linear-gradient(to bottom, black, #011F37);">
+<section class="header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo1-removebg-preview.png" alt="Logo" width="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto"> <!-- ms-auto untuk dorong menu ke kanan -->
+                    <li class="nav-item"><a class="nav-link active-home" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Our Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Let's Chat</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="video-container">
+        <video autoplay loop muted width="100%" class="responsive-video">
+            <source src="img/gi.mp4" type="video/mp4"> <!-- Ganti dengan path video Anda -->
+        </video>
+    </div>
+</section>
+<section class="services">
+    <div class="container">
+        <div class="image-container">
+            <img src="img/tokyo1.jpg" alt="Background Image">
+        </div>
+        <div class="text-container">
+            <h3 class="title-h1">About Us</h3>
+            <h1 class="subtitle-h1">We are a Jakarta based Communication Services</h1>
+            <p class="description">
+                With more than a decade handling big names in the advertising industries. 
+                We’re ready to create a new milestone with new media development, technology & 
+                100% satisfied customer as a target.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<section class="poster">
+    <div class="container">
+        <div class="text-container">
+            <h2 class="title">Our Service</h2>
+            <h1 class="subtitle">The power of Garuda Communication</h1>
+            <div class="services-box">
+                <p>Our brand positioning is integrated and interactive digital media developments. We specialize in engaging audiences reaching targeted people through a combination of attractive advertising content via digital & conventional media communication.</p>
+            </div>
+        </div>
+        <!-- Image Container -->
+        <div class="image-container-poster">
+            <div class="image-box" id="image1"><img src="img/tokyo1.jpg" alt="Image 1"></div>
+            <div class="image-box" id="image2"><img src="img/tokyo2.jpg" alt="Image 2"></div>
+            <div class="image-box" id="image3"><img src="img/tokyo3.jpg" alt="Image 3"></div>
+            <div class="image-box" id="image4"><img src="img/tokyo4.jpg" alt="Image 4"></div>
+        </div>
+    </div>
+</section>
+<div id="counter-container" class="counter-container">
+    <div class="box">
+        <div class="number" data-target="150">0+</div>
+        <div class="text">Projects</div>
+    </div>
+    <div class="box">
+        <div class="number" data-target="200">0+</div>
+        <div class="text">Clients</div>
+    </div>
+    <div class="box">
+        <div class="number" data-target="300">0+</div>
+        <div class="text">Awards</div>
+    </div>
+    <div class="box">
+        <div class="number" data-target="400">0+</div>
+        <div class="text">Partners</div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<div class="slider-container">
+    <h2>Our Client</h2>
+    <br>
+    <div class="slider">
+        <div><img src="img/samps-transformed.jpeg" alt="Client 1"></div>
+        <div><img src="img/samps-transformed.jpeg" alt="Client 2"></div>
+        <div><img src="img/samps-transformed.jpeg" alt="Client 3"></div>
+        <div><img src="img/samps-transformed.jpeg" alt="Client 4"></div>
+        <div><img src="img/samps-transformed.jpeg" alt="Client 5"></div>
+        <div><img src="img/samps-transformed.jpeg" alt="Client 6"></div>
+        <div><img src="img/samps-transformed.jpeg" alt="Client 1"></div>
+        <div><img src="img/samps-transformed.jpeg" alt="Client 2"></div>
+        <div><img src="img/samps-transformed.jpeg" alt="Client 3"></div>
+        <div><img src="img/samps-transformed.jpeg" alt="Client 4"></div>
+        <div><img src="img/samps-transformed.jpeg" alt="Client 5"></div>
+        <div><img src="img/samps-transformed.jpeg" alt="Client 6"></div>
+    </div>
+</div>
+
+
+
+<section class="footer text-center">
+    <!-- Konten footer di sini -->
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+const slider = document.querySelector('.slider');
+
+// Hentikan animasi saat mouse diklik
+document.addEventListener('mousedown', () => {
+    slider.style.animationPlayState = 'paused';
+});
+
+// Lanjutkan animasi saat mouse dilepas
+document.addEventListener('mouseup', () => {
+    slider.style.animationPlayState = 'running';
+});
+
+</script>
+
+<script>
+        const counters = document.querySelectorAll('.number');
+        let hasAnimated = false; // Flag untuk memastikan animasi hanya terjadi sekali
+
+        const startCounterAnimation = () => {
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = parseInt(counter.innerText);
+                    const increment = target / 100;
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment) + "+";
+                        setTimeout(updateCount, 20);
+                    } else {
+                        counter.innerText = target + "+";
+                    }
+                };
+                updateCount();
+            });
+        };
+
+        const checkScroll = () => {
+            const container = document.getElementById('counter-container');
+            const rect = container.getBoundingClientRect();
+            if (rect.top < window.innerHeight && !hasAnimated) {
+                hasAnimated = true; // Set flag agar animasi tidak terjadi lagi
+                startCounterAnimation();
+            }
+        };
+
+        window.addEventListener('scroll', checkScroll);
+</script>
+<script>
+document.querySelectorAll('.image-box').forEach(imageBox => {
+    imageBox.addEventListener('click', function() {
+        this.classList.toggle('floating');
+    });
+});
+
+// CSS tambahan untuk efek mengambang
+const style = document.createElement('style');
+style.innerHTML = `
+    .floating {
+        position: relative;
+        z-index: 1000;
+        transform: scale(1.1) translateY(-15px);
+    }
+`;
+document.head.appendChild(style);
+
+document.head.appendChild(style);
+
+</script>
+
+</body>
+</html>
